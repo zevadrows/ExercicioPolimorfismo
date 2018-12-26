@@ -11,7 +11,7 @@ public class OutSourcedEmployee extends Employee {
 
 	@Override
 	public double payment() {
-		return (this.getHours() * this.getValuePerHour()) + additionalCharge*110/100;
+		return super.payment() + additionalCharge*110/100;
 	}
 	
 
